@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f8f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2f4f4f;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.difficulty-btn {
+    margin: 15px;
+    background-color: #6c757d;
+    border-radius: 8px;
+}
+
+.difficulty-btn:hover {
+    background-color: #5a6268;
+}
+
+.quiz-screen, .game-over {
+    display: none;
+}
+
+.quiz-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #d1d1d1;
+}
+
+.game-over {
+    text-align: center;
+    background-color: #ffdddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#score {
+    font-weight: bold;
+    color: #ff0000;
+}
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.answer-btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00008b; /* Dark blue font color */
+    background-color: #f1f1f1;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.answer-btn:hover {
+    background-color: #d1e7ff;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}

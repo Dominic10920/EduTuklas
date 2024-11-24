@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>gen bio quiz</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Tuklas Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-screen">
+        <h1>Edu Tuklas Quiz!</h1>
+        <h3>Subject: Biology</h3>
+        <p>Select your difficulty:</p>
+        <button class="difficulty-btn" id="easy">Easy</button>
+        <button class="difficulty-btn" id="medium">Medium</button>
+        <button class="difficulty-btn" id="hard">Hard</button>
+    </div>
+    
+    <div class="quiz-screen" style="display: none;">
+        <div id="lives">Lives: 3</div>
+        <h2 id="question">Question will appear here</h2>
+        <div id="answers">
+            <button class="answer-btn" id="answer1"></button>
+            <button class="answer-btn" id="answer2"></button>
+            <button class="answer-btn" id="answer3"></button>
+            <button class="answer-btn" id="answer4"></button>
+        </div>
+        <p id="result"></p>
+        <button id="next-question" style="display: none;">Next Question</button>
+    </div>
+    
+    <div class="game-over" style="display: none;">
+        <h2>Game Over!</h2>
+        <p>Your score: <span id="score">0</span></p>
+        <div id="mistakes-list">
+            <h3>Your Mistakes:</h3>
+            <ul id="mistakes"></ul>
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
